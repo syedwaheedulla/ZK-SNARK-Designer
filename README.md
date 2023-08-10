@@ -24,13 +24,13 @@ template Multiplier2 () {
 }
 component main = Multiplier2();
 
-##Installation
+#Installation
 Run the following command to install the required dependencies:
 ```bash
 npm install
 '''
 
-##Compilation
+#Compilation
 Execute the command below to compile the circuit:
 ```bash
 npx hardhat circom
@@ -38,7 +38,7 @@ npx hardhat circom
 
 This will generate the out folder containing circuit intermediaries, as well as the MultiplierVerifier.sol contract.
 
-##Proving and Deploying
+#Proving and Deploying
 Run the script to deploy the MultiplierVerifier contract, generate a proof from circuit intermediaries, generate calldata, and finally, verify the proof:
 ```bash
 npx hardhat run scripts/deploy.ts
